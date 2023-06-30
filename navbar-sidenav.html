@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Fontawesome -->
+      <script src="https://kit.fontawesome.com/342f564f5e.js" crossorigin="anonymous"></script>
+      <!-- Material Icons -->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <title>Navbar & sidenav</title>  
+</head>
+<body>
+ <div class="navbar-fixed">
+
+ </div>   
+    <nav class="pink darken-2">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="" class="brand-logo"> Cummings - Emard</a>
+                <a href="a" data-target="slide-out" class="sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li class="active"> 
+                        <a href="navbar-sidenav.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="Index.html">About</a>
+                    </li>
+                    <li>
+                        <a href="https://materializecss.com/icons.html" target="_blank">Material Icons</a>
+                    </li>
+                    <li>
+                        <a href="" class="dropdown-trigger" data-target="dropdown-menu">
+                        <i class="material-icons right">arrow_drop_down
+
+                        </i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>   
+    </nav>
+    <!--Dropdown Structure-->
+    <ul id="dropdown-menu" class="dropdown-content pink">
+        <li>
+            <a href="" class="white-text">JavaScript
+                <i class="fa-brands fa-js"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://react.dev/" class="white-text" target="_blank">React
+               <i class="fa-brands fa-react"></i> 
+            </a>
+        </li>
+        <li>
+            <a href="https://nodesjs.org/en" class="white-text" target="_blank">NodeJS
+                <i class="fa-brands fa-node-js left"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!-- Slidenav structure -->
+<ul id="slide-out" class="sidenav">
+    <li>
+        <div class="user-view">
+            <div class="background">
+                <img src="images/Image 1.jpg" alt="">
+            </div>
+            <a href="">
+                <i class="fa-brands fa-square-js large"></i>
+            </a>
+            <a href="">
+                <span class="wite-text name">Muriel Hamill</span>
+            </a>
+            <a href="">
+                <span class="wite-text email">muriel_hamill@gmail.com</span>
+            </a>
+        </div>
+    </li>
+</ul>
+
+
+
+
+
+     <!--Jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Dropdown Init
+            $('.dropdown-trigger').dropdown();
+            // Sidenav init
+            $('.sidenav').sidenav();
+        })
+    </script>
+</body>
+</html>
